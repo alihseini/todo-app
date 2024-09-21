@@ -1,0 +1,120 @@
+:root{
+    --color-primary:#f9d72f;
+    --color-background:#e6e6e6;
+    --color-task:#f7f7f7;
+    --color-success:#36d39a;
+    --color-warning:#fbbe23;
+    --color-error:#fd5d2c;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 1000px;
+    margin: auto;
+}
+.top{
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px #49494915,-5px -5px 5px #49494915;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 3%;
+}
+h2{
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+}
+.adding-inputs{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.adding-inputs input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5%;
+    border: 1px solid var(--color-primary);
+}
+.adding-inputs input:focus{
+    outline: none;
+    border-width: 2.5px;
+}
+.top-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:15px;
+}
+button{
+    padding: 7px 15px;
+    margin: 0 3px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 5%;
+    transition: all 0.2s;
+}
+#edit-button{
+    display: none;
+}
+button:hover{
+    cursor: pointer;
+    border-radius: 15%;
+    opacity: 0.9;
+}
+.delete{
+    background-color: var(--color-error);
+}
+table{
+    width: 100%;
+}
+thead{
+    background-color: var(--color-background);
+}
+thead th{
+    padding: 10px;
+}
+thead th:first-child{
+    border-top-left-radius: 20px;
+}
+thead th:last-child{
+    border-top-right-radius: 20px;
+}
+tbody td{
+    padding: 10px;
+    background-color: var(--color-task);
+    text-align: center;
+    width: 25%;
+}
+tbody td button{
+    padding: 5px 9px;
+}
+#done-button{
+    background-color: var(--color-success);
+}
+#alert-message{
+    width: 100%;
+    height: 30px;
+}
+.alert{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 3%;
+}
+.alert-successful{
+    background-color: var(--color-success);
+}
+.alert-fail{
+    background-color: var(--color-error);
+}
